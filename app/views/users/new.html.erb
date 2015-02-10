@@ -1,0 +1,14 @@
+<h3>Sign up for a new account.</h3>
+
+<%= form_for @user, url: {action: "create"} do |f| %>
+  <%=f.label :name %>
+  <%=f.text_field :name %>
+  <br><br>
+  <%=f.label :email %>
+  <%=f.text_field :email %>
+  <br><br>
+  <%=f.submit "Create account" %>
+<% end %>
+
+
+

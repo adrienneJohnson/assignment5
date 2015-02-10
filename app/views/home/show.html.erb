@@ -1,0 +1,15 @@
+<center><h1>Fifth App</h1></center>
+
+<%= form_tag("/search", method: "get") do %>
+  <%=label_tag(:query, "Search Users:") %>
+  <%=text_field_tag(:query) %>
+  <%=submit_tag("Submit") %>
+<% end %>
+
+<br>
+
+<%= form_tag("/search", method: "get") do %>
+  <%=label_tag(:query, "Search Posts:") %>
+  <%=text_field_tag(:query) %>
+  <%=submit_tag("Submit") %>
+<% end %>

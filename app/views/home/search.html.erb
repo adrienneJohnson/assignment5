@@ -1,0 +1,7 @@
+<% if @user %>
+  <%= link_to @user.name, user_path(@user) %>
+<% end %>
+
+<% if @post %>
+  <%= link_to @post.title, post_path(@post) %>
+<% end %>
